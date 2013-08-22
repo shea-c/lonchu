@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Landing: Features
+   ========================================================================== */
+#features{
+	width:100%;
+	background-image:url('/media/images/patterns/old_mathematics.png');
+}
+.feature{
+	padding-top:0.5em;
+}
+.feature_title{
+	margin:0.5em 0;
+	font-size:1.5em;
+	font-weight:600;
+}
+.feature_description{
+	margin:0.5em 0;
+	font-size:1.1em;
+}
+
+@media all and (min-width: 600px) {
+	.feature_title{
+		font-size:1.8em;
+	}
+	.feature_description{
+		font-size:1.3em;
+	}
+	.feature_left{
+		padding-right:4%;
+	}
+	.feature{
+		float:left;
+		width:48%;
+		padding-bottom:0.5em;
+	}
+}

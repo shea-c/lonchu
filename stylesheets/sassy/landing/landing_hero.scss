@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Landing: Hero
+   ========================================================================== */
+#hero{
+	background-image:url('/media/images/hero/hero_ld.png');
+	background-position:center center;
+	background-size:cover;
+}
+#lead{
+	width:100%;
+	margin:0;
+	padding:1em 0;
+	font-size:1.5em;
+	color:white;
+	font-weight:600;
+}
+
+@media all and (min-width: 600px) {
+	#lead{
+		font-size:1.8em;
+		padding:1em 0 2.5em 0
+	}
+}
