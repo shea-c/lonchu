@@ -2,25 +2,168 @@
 	General
    ==================== */
 body{
-	background-color:#0c0c0c;
+
 }
 #hero{
 	background-image:url('/media/images/hero.ld.png');
+	background-size:cover;
+	background-position:center center;
 }
 #navigation_bar{
 	color:white;
 }
-#navigation{
-	background-color:#0c0c0c;
-}
-.navigation_link{
+#navigation_open, #navigation_close, .navigation_link{
 	color:white;
+}
+#lead{
+	color:white;
+	font-size:1.5em;
+	padding-left:0.2em;
+	margin:0;
+	font-weight:600;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+}
+#features{
+	background-repeat:repeat;
+}
+.feature_pitch{
+	margin:0;
+	width:100%;
+	text-align:center;
+	font-weight:600;
+}
+.feature_description{
+	margin:0;
+	width:100%;
+}
+#testimonial_title{
+	font-weight:600;
+	margin:0;
+}
+blockquote{
+	margin:0;
+	padding:0.4em 0;
+}
+.left_quote{
+	font-size:1.3em;
+	line-height:0.5rem;
+	font-weight:700;
+}
+.quote{
+	margin:0;
+	float:left;
+	font-size:1.2em;
+	width:100%;
+	padding:0.3em 0;
+}
+.right_quote{
+	font-size:1.3em;
+	line-height:0.5rem;
+	font-weight:700;
+}
+.testimonial_image{
+	float:right;
+	width:20%;
+	border-radius:0.5em;
+	-webkit-border-radius:0.5em;
+	-moz-border-radius:0.5em;
+}
+.testimonial_attribution{
+	width:55%;
+	font-size:1.2em;
+	padding-left:5%;
+	float:right;
+}
+.section{
+	background-image:url('/media/images/subtle_zebra_3d.png');
 }
 
 /* == General: Mobile == */
+#navigation{
 
+}
+.feature{
+	width:94%;
+	padding:2% 3%;
+}
+.feature_image{
+	width:30%;
+	margin:0 35%;
+}
+.feature_pitch{
+	font-size:1.5em;
+}
+.feature_description{
+	font-size:1.2em;
+	padding-top:0.2em;
+}
+#testimonial_title{
+	font-size:1.7em;
+}
 
 /* == General: Tablet == */
-
+@media all and (min-width:650px){
+	#lead{
+		padding-top:3em;
+		padding-bottom:0.6em;
+		font-size:1.8em;
+	}
+	.feature{
+		padding:1% 1.5%;
+		width:30.3%;
+		float:left;
+	}
+	.feature_pitch{
+		padding-top:0.2em;
+		font-size:1.7em;
+	}
+	.feature_image{
+		display:block;
+		width:30%;
+		margin:0 35%;
+	}
+	.feature_description{
+		text-align:left;
+		font-size:1.2em;
+	}
+	.quote{
+		width:75%;
+	}
+	.testimonial_image{
+		width:5%;
+		padding-left:1%;
+	}
+	.testimonial_attribution{
+		width:18%;
+		padding-left:1%;
+	}
+}
 
 /* == General: Desktop == */
+@media all and (min-width:1200px){
+	#lead{
+		padding-top:3.5em;
+		padding-bottom:0.8em;
+		font-size:2em;
+	}
+	.feature{
+		padding:0 1.5%;
+		width:30.3%;
+		float:left;
+	}
+	.feature_image{
+		display:block;
+		width:25%;
+		margin:0 37.5%;
+	}
+	.feature_pitch{
+		font-size:1.8em;
+	}
+	.feature_description{
+		font-size:1.2em;
+	}
+	#testimonial_title{
+		font-size:1.8em;
+	}
+}
